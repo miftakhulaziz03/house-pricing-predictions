@@ -41,3 +41,8 @@ df_train = df_train.drop(cols_missing_data, axis=1)
 df_test = df_test.drop(cols_missing_data, axis=1)
 
 df_train.isnull().sum()
+
+df_train.head()
+df_train.shape
+df_test.isnull().sum()
+df_test.head()
