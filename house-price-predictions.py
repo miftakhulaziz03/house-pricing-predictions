@@ -13,3 +13,16 @@ df_test.shape
 pd.set_option('display.max_columns', None)
 pd.set_option('display.max_rows', None)
 
+import numpy as np
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+import plotly.graph_objects as go
+import matplotlib.style as style
+import plotly.express as px
+import warnings
+warnings.filterwarnings('ignore')
+
+df_train.isnull().sum()
+
+df_train.describe(include='all').T
