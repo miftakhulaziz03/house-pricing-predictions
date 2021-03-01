@@ -26,3 +26,18 @@ warnings.filterwarnings('ignore')
 df_train.isnull().sum()
 
 df_train.describe(include='all').T
+
+df_train.describe()
+
+df_test.isnull().sum()
+
+df_test.describe(include='all').T
+
+df_train.describe()
+
+cols_missing_data = ['Alley','PoolQC', 'Fence', 'MiscFeature']
+
+df_train = df_train.drop(cols_missing_data, axis=1)
+df_test = df_test.drop(cols_missing_data, axis=1)
+
+df_train.isnull().sum()
